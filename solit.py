@@ -6,7 +6,7 @@ from gensim.models import word2vec
 
 sys.path.append("/.pyenv/versions/anaconda3-4.3.1/envs/word2vec/lib/python3.6/site-packages")
 with open("newkashi.txt","w") as n:
-    with open("test.text","rb") as f:
+    with open("kashi.txt","rb") as f:
         binarydata = f.read()
         text = binarydata.decode('utf_8')
         text = re.sub(r'<br/>', '  ', text)
